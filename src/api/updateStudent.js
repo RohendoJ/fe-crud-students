@@ -9,7 +9,7 @@ const updateStudent = async (data, id) => {
         "Content-Type": "application/json",
       },
 
-      withCredentials: true,
+      withCredentials: false,
     }
   );
 

@@ -9,7 +9,7 @@ const addStudents = async (data) => {
         "Content-Type": "application/json",
       },
 
-      withCredentials: true,
+      withCredentials: false,
     }
   );
 
