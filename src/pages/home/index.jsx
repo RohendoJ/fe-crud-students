@@ -14,7 +14,6 @@ const Home = () => {
   const fetchStudents = async () => {
     const data = await getAllStudents();
     setStudents(data);
-    console.log(data);
   };
 
   const deleteStudent = async (id) => {
@@ -26,7 +25,11 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetchStudents();
+    const interval = setInterval(() => {
+      fetchStudents();
+    }, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   if (students.length === 0) {
