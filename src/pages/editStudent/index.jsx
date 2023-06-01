@@ -24,9 +24,7 @@ const EditStudent = () => {
     console.log(data);
   };
 
-  const submitUpdateStudent = (data, id, e) => {
-    e.preventDefault();
-
+  const submitUpdateStudent = (data, id) => {
     updateStudent(data, id);
     navigate("/");
   };
