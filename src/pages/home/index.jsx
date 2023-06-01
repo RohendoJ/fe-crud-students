@@ -27,7 +27,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       fetchStudents();
-    }, 1000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
