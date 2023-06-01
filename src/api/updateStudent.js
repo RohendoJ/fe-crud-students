@@ -1,0 +1,19 @@
+import axios from "axios";
+
+const updateStudent = async (data, id) => {
+  const res = await axios.put(
+    `https://gocrud-production.up.railway.app/api/update/${id}`,
+    data,
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      withCredentials: true,
+    }
+  );
+
+  return res.data.data;
+};
+
+export { updateStudent };
