@@ -10,6 +10,7 @@ const Loading = () => {
         icon="fa-solid fa-circle-notch"
         size="2xl"
         style={{ color: "#1e6fd9" }}
+        spin
       />
     </MainLayout>
   );
