@@ -24,10 +24,15 @@ const EditStudent = () => {
     console.log(data);
   };
 
-  const submitUpdateStudent = (data, id) => {
-    updateStudent(data, id);
+  const submitUpdateStudent = async (data, id) => {
+    await updateStudent(data, id);
     navigate("/");
+    fetchStudents();
   };
+
+  useEffect(() => {
+    fetchStudents();
+  }, []);
 
   return (
     <>

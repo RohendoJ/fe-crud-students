@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-      fetchStudents();
+    fetchStudents();
   }, []);
 
   if (students.length === 0) {
