@@ -25,11 +25,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
       fetchStudents();
-    }, 1000);
-
-    return () => clearInterval(interval);
   }, []);
 
   if (students.length === 0) {
