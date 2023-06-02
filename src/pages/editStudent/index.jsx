@@ -29,10 +29,6 @@ const EditStudent = () => {
     navigate("/");
   };
 
-  useEffect(() => {
-    fetchStudents();
-  }, []);
-
   return (
     <>
       <Navbar />
